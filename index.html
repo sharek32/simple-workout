@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Routine</title>
+    <style>
+        /* Apply full-page gradient */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            background-attachment: fixed; /* Prevents sectioned appearance */
+            text-align: center;
+            color: #fff;
+        }
+        h1 {
+            color: #4caf50;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+        .routine {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+        }
+        .day {
+            background: rgba(44, 44, 44, 0.9); /* Semi-transparent background */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .day:hover {
+            transform: scale(1.05);
+            background: #4caf50;
+            color: white;
+        }
+        .exercises {
+            display: none;
+            padding-top: 10px;
+            font-size: 14px;
+            color: #ddd;
+        }
+        .day:hover .exercises {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weekly Workout Routine</h1>
+    <div class="routine">
+        <div class="day">Monday - Height & Mobility
+            <div class="exercises">
+                <strong>Warm-up (5 min)</strong><br>
+                Arm Circles – 1 min<br>
+                Leg Swings – 1 min<br>
+                Neck & Shoulder Rolls – 1 min<br>
+                Toe Touch & Stretch – 1 min<br>
+                High Knees – 1 min<br><br>
+                <strong>Main Workout (20 min)</strong><br>
+                Hanging Stretch – 2 min<br>
+                Cobra Stretch & Cat-Cow – 2 min<br>
+                Jumping Jacks – 2 min<br><br>
+                <strong>Cool-down (5 min)</strong><br>
+                Deep Breathing – 1 min<br>
+                Hamstring & Hip Stretch – 2 min<br>
+                Elbow & Wrist Mobility – 2 min
+            </div>
+        </div>
+        <div class="day">Tuesday - Biceps & Strength
+            <div class="exercises">
+                <strong>Warm-up (5 min)</strong><br>
+                Arm Circles – 1 min<br>
+                Shoulder Rolls – 1 min<br>
+                Wrist Rotations – 1 min<br>
+                Light Jogging – 2 min<br><br>
+                <strong>Main Workout (20 min)</strong><br>
+                Isometric Bicep Holds – 3 sets of 30 sec<br>
+                Slow Negative Push-Ups – 3 sets of 10 reps<br>
+                Wall or Incline Push-ups – 3 sets of 12 reps<br><br>
+                <strong>Cool-down (5 min)</strong><br>
+                Deep Breathing – 1 min<br>
+                Shoulder Stretch – 2 min<br>
+                Wrist Mobility – 2 min
+            </div>
+        </div>
+        <div class="day">Wednesday - Weight Loss
+            <div class="exercises">
+                <strong>Warm-up (5 min)</strong><br>
+                Jump Rope (Simulated) – 1 min<br>
+                Arm Swings – 1 min<br>
+                Side Lunges – 1 min<br>
+                Marching in Place – 2 min<br><br>
+                <strong>Main Workout (20 min)</strong><br>
+                Squats – 3 sets of 12 reps<br>
+                Seated Leg Raises – 3 sets of 10 reps<br>
+                Standing Side Leg Raises – 3 sets of 12 reps each side<br><br>
+                <strong>Cool-down (5 min)</strong><br>
+                Deep Breathing – 1 min<br>
+                Seated Hamstring Stretch – 2 min<br>
+                Hip Mobility – 2 min
+            </div>
+        </div>
+        <div class="day">Thursday - Mobility & Biceps
+            <div class="exercises">
+                <strong>Warm-up (5 min)</strong><br>
+                Leg Swings – 1 min<br>
+                Neck Rolls – 1 min<br>
+                Arm Circles – 1 min<br>
+                Light Jogging – 2 min<br><br>
+                <strong>Main Workout (20 min)</strong><br>
+                Hanging Stretch – 2 min<br>
+                Wall Push-ups – 3 sets of 12 reps<br>
+                Isometric Holds – 3 sets of 30 sec<br><br>
+                <strong>Cool-down (5 min)</strong><br>
+                Shoulder Stretch – 2 min<br>
+                Deep Breathing – 1 min<br>
+                Wrist Rotations – 2 min
+            </div>
+        </div>
+        <div class="day">Friday - Strength & Weight Loss
+            <div class="exercises">
+                <strong>Warm-up (5 min)</strong><br>
+                Shoulder Rolls – 1 min<br>
+                Toe Touch – 1 min<br>
+                Jumping Jacks – 1 min<br>
+                Light Jogging – 2 min<br><br>
+                <strong>Main Workout (20 min)</strong><br>
+                Slow Push-ups – 3 sets of 10 reps<br>
+                Wall Push-ups – 3 sets of 12 reps<br>
+                High Knees – 2 min<br><br>
+                <strong>Cool-down (5 min)</strong><br>
+                Hamstring Stretch – 2 min<br>
+                Deep Breathing – 1 min<br>
+                Shoulder Rolls – 2 min
+            </div>
+        </div>
+        <div class="day">Saturday - Light Full-Body
+            <div class="exercises">
+                <strong>Warm-up (5 min)</strong><br>
+                Toe Touch Stretch – 1 min<br>
+                Arm Swings – 1 min<br>
+                Marching in Place – 3 min<br><br>
+                <strong>Main Workout (20 min)</strong><br>
+                Deep Breathing – 1 min<br>
+                Seated Hamstring Stretch – 2 min<br>
+                Shoulder Stretch – 2 min
+            </div>
+        </div>
+        <div class="day" style="background: #444;">Sunday - Rest Day</div>
+    </div>
+</body>
+</html>
